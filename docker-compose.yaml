@@ -1,0 +1,27 @@
+services:      
+  mobile-vending-machine-ui:
+    image: mobile-vending-machine-ui:1.0
+    build:
+      context: ./user_interface # Dockerfile's folder
+      dockerfile: Dockerfile
+    container_name: mobile-vending-machine-ui
+    ports:
+      - 3000:3000
+    networks:
+      - mvm-network
+
+  backend:
+    image: mobile-vending-machine-be:1.0
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    healthcheck:
+      test: ['CMD', 'nc', '-z', 'localhost', '8000']
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    ports:
+      - 8000:8000
+
+networks:
+  mvm-network:

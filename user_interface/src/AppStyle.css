@@ -1,0 +1,842 @@
+.navbar{
+  background: #131313;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; 
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#navbar__logo{
+  background-color: #ff8144;
+  background-image: linear-gradient(to top, #ff3908 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.photo {
+  height: 90%;
+  width: 90%;
+}
+.main{
+    background-color: white;
+}
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: rgb(41, 39, 39);
+    z-index: 1;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.main__content h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff3908 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main__content h2{
+    font-size: 2rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff3908 0%, #ffb199 100%);
+    background-size: 100%;
+    position: relative;
+    left: 10px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main__btn{
+    font-size: 2rem;
+    position: relative;
+    top: 20px;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 50px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    width: 70%;
+}
+.main__btn a{
+    text-decoration:none;
+    color: white;
+}
+
+.Drinks{
+    display: flex;
+    padding-top: 20px;
+    background-color: rgb(41, 39, 39);
+    margin: 0 auto;
+    height: 90vh;
+    justify-content: space-between;
+}
+.Drinks__box{
+    width: 300px;
+    height: 450px;
+    margin: 15px 25px;
+    transition: all 0.5s ease-in-out;
+    
+    background-size: 250px 400px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display:flex;
+    justify-content: center;
+
+    cursor:pointer;
+    border-radius: 25px;
+
+    animation: Drinks-load 300ms ease-out;
+    flex-direction: column;
+    
+}
+
+
+.Drinks__box h1{
+  
+    font-family: 'Mochiy Pop One', sans-serif;
+    /* color: rgb(41, 39, 39); */
+    /* background-color: #ff8177;
+    background-image: linear-gradient(to top, #571403 75%, #ff3908 100%);
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    
+}
+
+.Drinks__box h2{
+  font-family: 'Mochiy Pop One', sans-serif;
+  /* color: rgb(41, 39, 39); */
+  /* background-color: #ff8177;
+  background-image: linear-gradient(to top, #571403 75%, #ff3908 100%);
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
+  padding-bottom: 50px;
+  margin-left:auto;
+  margin-right:auto;
+  
+  
+}
+
+.Drinks__box_water h1{
+  background-color: #ff8177;
+    background-image: linear-gradient(to top, #ecf384 0%, #fbff08 50%);
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    /* -webkit-text-stroke: .5px #a4b000; */
+}
+
+.Drinks__box_water h2{
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ecf384 0%, #fbff08 50%);
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: .5px rgb(95, 80, 80);
+}
+
+.Drinks__box_soda h1{
+  background-color: #971616;
+    /* background-image: linear-gradient(to top, #571403 0%, #ff3908 50%); */
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: .5px rgb(151, 22, 22);
+}
+
+.Drinks__box_soda h2{
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #571403 25%, #ff3908 100%);
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: .5px rgb(95, 80, 80);
+}
+
+.Drinks__box_kopi h1{
+  background-color: #ff8177;
+    background-image: linear-gradient(to top, rgb(94, 65, 3) 100%, rgb(255, 234, 1) 100%);
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px rgb(48, 46, 46);
+}
+
+.Drinks__box_kopi h2{
+  background-color: palegoldenrod;
+  /* background-image: linear-gradient(to top, rgb(94, 65, 3) 25%, rgb(255, 234, 1) 100%); */
+  background-image: linear-gradient(to top, rgb(94, 65, 3) 100%, rgb(255, 234, 1) 100%);
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgb(48, 46, 46);
+}
+
+.Drinks__box_teh h1{
+  background-color: #ff8177;
+    background-image: linear-gradient(to top, rgb(12, 65, 12) 0%, rgb(115, 236, 115) 50%);
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px rgb(48, 46, 46);
+}
+
+.Drinks__box_teh h2{
+  background-color: palegoldenrod;
+  background-image: linear-gradient(to top, rgb(12, 65, 12) 25%, rgb(115, 236, 115) 100%);
+  /* background-image: linear-gradient(to top, rgb(94, 65, 3) 100%, rgba(152, 251, 152, 0.925) 100%); */
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px rgb(48, 46, 46);
+}
+
+.Drinks__box_teh{
+    background-image: url('images/Menu1.svg');
+}
+.Drinks__box_kopi{
+    background-image: url('images/Menu2.svg');
+}
+.Drinks__box_soda{
+    background-image: url('images/Menu3.svg');
+}
+.Drinks__box_water{
+  background-image: url('images/bottle.png');
+  background-size: 200px 200px;
+}
+
+.Drinks__box:nth-child(1){
+    background-color:rgba(152, 251, 152, 0.925);
+}
+.Drinks__box:nth-child(2){
+    background-color:palegoldenrod;
+}
+.Drinks__box:nth-child(3){
+    background-color:palevioletred;
+}
+.Drinks__box_water{
+    background-color:#e73232c6;
+}
+
+.Drinks__box.Unavailable{
+  background-color: gray;
+  cursor: default;
+}
+
+.Drinks__box.Unavailable h1{
+  background-color: rgb(0, 0, 0);
+  /* -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
+}
+
+.Drinks__box.Unavailable h2{
+  background-color: rgb(0, 0, 0);
+  /* -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
+}
+
+.Drinks__box.Unavailable{
+  opacity: 0.2;
+}
+
+/* .Drinks__box_teh.Unavailable{
+  opacity: 0.2;
+}
+.Drinks__box_kopi.Unavailable{
+  opacity: 0.2;
+}
+.Drinks__box_soda.Unavailable{
+  opacity: 0.2;
+}
+.Drinks__box_water.Unavailable{
+  opacity: 0.2;
+} */
+
+#Drinks__img1{
+    padding-top: 32%;
+    padding-left: 10%;
+}
+
+#Drinks__img2{
+    padding-top: 50%;
+    padding-left: 10%;
+}
+
+#Drinks__img3{
+    padding-top: 50%;
+    padding-left: 10%;
+}
+
+.Instruction {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.Instruction-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.InsColumn1{
+  width: 70%;
+  height: 500px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  background: blanchedalmond;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0px;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  left: 150px;
+  bottom: 60px;
+  animation: Drinks-load 300ms ease-out;
+}
+
+.InsColumn{
+  width: 70%;
+  height: 500px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  background: blanchedalmond;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0px;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  left: 150px;
+  bottom: 60px;
+}
+
+.InsColumn2{
+  width: 70%;
+  height: 500px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  background: blanchedalmond;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0px;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  left: 150px;
+  bottom: 60px;
+  
+}
+
+
+
+
+.Ins_btn{
+  font-size: 2rem;
+  position: relative;
+  top: 20px;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 50px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  width: 70%;
+  /* animation: Drinks-load 300ms ease-out; */
+}
+
+.Ins_btn a{
+  text-decoration:none;
+  color: white;
+}
+
+.Ins_btn p{
+  text-decoration:none;
+  color: white;
+}
+
+.InsColumn h1{
+  font-size: 1.5rem;
+}
+.InsColumn li{
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.Insphoto {
+  height: 90%;
+  width: 90%;
+  margin-right: 50px;
+}
+
+.Moneh1photo {
+  height: 100%;
+  width: 50%;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+.moneh1asda h1{
+  font-size:2rem;
+  text-align: center;
+}
+
+.moneh1_btn{
+  font-size: 2rem;
+  position: relative;
+  top: 20px;
+  left: 60px;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 50px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  width: 70%;
+  /* animation: Drinks-load 300ms ease-out; */
+}
+
+.moneh1_btn a{
+  text-decoration:none;
+  color: white;
+}
+
+.moneh1_btn p{
+  text-decoration:none;
+  color: white;
+}
+
+.Moneh2photo {
+  height: 100%;
+  width: 50%;
+  margin-right: 25px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.moneh2asda h1{
+  font-size:2rem;
+  text-align: center;
+  padding-right: 25px;
+}
+
+.moneh2_btn{
+  font-size: 2rem;
+  position: relative;
+  top: 20px;
+  left: 42px;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 50px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  width: 70%;
+  /* animation: Drinks-load 300ms ease-out; */
+}
+
+.moneh2_btn a{
+  text-decoration:none;
+  color: white;
+}
+
+.moneh2_btn p{
+  text-decoration:none;
+  color: white;
+}
+
+.Next {
+  position: fixed; /* Stay in place */
+  z-index: 1; 
+  /* padding-top: 150px;  */
+  /* left: 122px; */
+  top: 300px;
+  width: 100%; /* Full width */
+  height: 100px; /* Full height */
+  background: rgb(236, 155, 34);
+  animation: Drinks-load 300ms ease-out;
+  text-align: center;
+}
+
+.Next h1{
+  font-size: 1.7rem;
+  padding-top:20px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: rgb(253, 234, 234);
+}
+
+.TooMuch {
+  position: fixed; /* Stay in place */
+  z-index: 1; 
+  /* padding-top: 150px;  */
+  /* left: 122px; */
+  top: 300px;
+  width: 100%; /* Full width */
+  height: 100px; /* Full height */
+  background: rgb(236, 34, 34);
+  animation: Drinks-load 300ms ease-out;
+  text-align: center;
+}
+
+.TooMuch h1{
+  padding-top:20px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: rgb(253, 234, 234);
+}
+
+.Pas {
+  position: fixed; /* Stay in place */
+  z-index: 1; 
+  /* padding-top: 150px;  */
+  /* left: 122px; */
+  top: 300px;
+  width: 100%; /* Full width */
+  height: 100px; /* Full height */
+  background: rgb(61, 126, 15);
+  animation: Drinks-load 300ms ease-out;
+  text-align: center;
+}
+
+.Pas h1{
+  padding-top:20px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: rgb(253, 234, 234);
+}
+
+.bagg {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+  }
+
+.column{
+    width: 50%;
+    height: 400px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+    background: blanchedalmond;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    left: 250px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    font-size: 50px;
+    font-weight: bold;
+    float:right;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.button-pushable {
+    width: 50%;
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  .button-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%
+    );
+  }
+  
+  .button-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 2.5rem;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  
+  
+  .button-pushable:hover {
+    filter: brightness(110%);
+  }
+  
+  .button-pushable:hover .button-front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-pushable:active .button-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .button-pushable:hover .button-shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-pushable:active .button-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .button-pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+@keyframes Drinks-load{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin-left: 41.9%;
+  margin-top: 15%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 80px solid #fdd;
+  border-color: #fdd transparent #fdd transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.lds-hourglass.Unavailable{
+  display: none;
+}
+
+.cup{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 180px;
+  border: 6px solid transparent;
+  border-top: 2px solid transparent;
+  border-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: url(images/bros.png);
+  background-size: 340px 240px;
+  /* background-position: 0 100px; */
+  background-repeat: repeat-x;
+  animation: animate 5s linear infinite ;
+  /* animation-direction: alternate; */
+  box-shadow: 0 0 0 6px #fff, 0 20px 35px rgba(0,0,0,0.7);
+}
+
+.cup:before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  border: 6px solid #fff;
+  right: -68px;
+  top: 30px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+@keyframes animate {
+  0%{
+    background-position: 0px 80px;
+  }
+  40%{
+    background-position: 500px 0px;
+  }
+  80%{
+    background-position: 1000px 0px;
+  }
+  100%{
+    background-position: 0px 200px;
+  }
+}
+
+.cup.Unavailable{
+  visibility:hidden;
+  opacity:0;
+  transition: visibility 0s .5s, opacity .5s linear;
+}
